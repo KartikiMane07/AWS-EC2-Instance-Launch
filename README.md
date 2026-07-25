@@ -1,22 +1,22 @@
 # 🚀 AWS EC2 Instance Launch
 
-A beginner-friendly AWS Cloud Computing project that demonstrates how to launch, configure, and access an Amazon EC2 (Elastic Compute Cloud) instance using the AWS Management Console.
+A beginner-friendly AWS Cloud Computing project that demonstrates how to launch and manage an Amazon EC2 (Elastic Compute Cloud) instance using the AWS Management Console.
 
 ---
 
 ## 📌 Project Description
 
-This project explains the complete process of creating an EC2 virtual server on AWS. It covers selecting an Amazon Machine Image (AMI), choosing an instance type, configuring networking and security settings, creating a key pair, launching the instance, and connecting to it securely.
+This project showcases the process of creating and managing a virtual server (EC2 instance) on Amazon Web Services (AWS). It covers launching an instance, configuring the required settings, monitoring its status, and terminating it after successful deployment.
 
 ---
 
-## 🎯 Objective
+## 🎯 Objectives
 
-- Understand the basics of Amazon EC2.
-- Learn how to launch a virtual machine in AWS.
-- Configure networking and security settings.
-- Connect to the instance securely.
-- Explore the EC2 instance lifecycle.
+- Learn the fundamentals of Amazon EC2.
+- Launch and configure an EC2 instance.
+- Understand AWS Console navigation.
+- Monitor the EC2 instance lifecycle.
+- Learn how to safely terminate cloud resources.
 
 ---
 
@@ -26,177 +26,158 @@ This project explains the complete process of creating an EC2 virtual server on 
 - Amazon VPC
 - Security Groups
 - Key Pair
-- EC2 Instance Connect / SSH
+- AWS Management Console
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠️ Technologies Used
 
-- AWS Management Console
-- Amazon Linux 2023 AMI
-- EC2 Instance Connect / SSH
+- AWS Cloud
+- Amazon EC2
+- Amazon Linux AMI
 - Web Browser
 
 ---
 
-## 📋 Prerequisites
+## 📖 Implementation Steps
 
-Before starting this project, ensure you have:
-
-- An AWS Account
-- Internet Connection
-- Basic understanding of Cloud Computing
-- Modern Web Browser
-
----
-
-# 📖 Implementation Steps
-
-### Step 1: Login to AWS
+### Step 1: Login to AWS Console
 - Logged in to the AWS Management Console.
 
-### Step 2: Open EC2 Dashboard
+### Step 2: Open Amazon EC2 Dashboard
 - Navigated to **Services → EC2**.
+- Accessed the EC2 Dashboard.
 
-### Step 3: Launch Instance
+### Step 3: Launch a New EC2 Instance
 - Clicked **Launch Instance**.
-
-### Step 4: Configure Instance
 - Entered the instance name.
-- Selected **Amazon Linux 2023 AMI**.
-- Chose **t2.micro** (Free Tier Eligible).
+- Selected the Amazon Machine Image (AMI).
+- Chose the instance type.
+- Configured the network settings.
+- Selected the Key Pair.
+- Reviewed the configuration.
+- Launched the instance.
 
-### Step 5: Create Key Pair
-- Created a new Key Pair.
-- Downloaded the `.pem` file securely.
-
-### Step 6: Configure Network
-- Selected the default VPC.
-- Allowed inbound traffic for:
-  - SSH (Port 22)
-  - HTTP (Port 80)
-  - HTTPS (Port 443)
-
-### Step 7: Review & Launch
-- Reviewed all configuration settings.
-- Clicked **Launch Instance**.
-
-### Step 8: Verify Instance
+### Step 4: Verify Instance Status
 - Confirmed the instance entered the **Running** state.
-- Verified that all status checks passed.
+- Verified that all status checks passed successfully.
 
-### Step 9: Connect to EC2
-- Connected using **EC2 Instance Connect** or **SSH**.
-- Successfully accessed the Linux terminal.
-
-### Step 10: Monitor Instance
-- Viewed:
-  - Instance ID
-  - Public IPv4 Address
-  - Private IPv4 Address
-  - Availability Zone
-  - Instance State
-
-### Step 11: Stop & Restart
-- Stopped the instance.
-- Restarted the instance successfully.
-
-### Step 12: Terminate Instance
-- Terminated the instance after completing the project to avoid unnecessary AWS charges.
+### Step 5: Terminate the Instance
+- Selected the EC2 instance.
+- Chose **Terminate Instance**.
+- Verified that the instance state changed to **Terminated**.
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```
 AWS-EC2-Instance-Launch/
 │
 ├── README.md
-├── screenshots/
-│   ├── 01-login.png
-│   ├── 02-ec2-dashboard.png
-│   ├── 03-launch-instance.png
-│   ├── 04-select-ami.png
-│   ├── 05-instance-type.png
-│   ├── 06-key-pair.png
-│   ├── 07-security-group.png
-│   ├── 08-review.png
-│   ├── 09-running-instance.png
-│   └── 10-connection.png
-│
-└── LICENSE
+└── screenshots/
+    ├── 01-aws-console-home.png
+    ├── 02-ec2-dashboard.png
+    ├── 03-launch-instance.png
+    ├── 04-instance-running.png
+    └── 05-instance-terminated.png
 ```
 
 ---
 
 # 📷 Screenshots
 
-Include screenshots for each major step:
+### 1. AWS Management Console Home
 
-- AWS Console
-- EC2 Dashboard
-- Launch Instance Page
-- AMI Selection
-- Instance Type Selection
-- Key Pair Creation
-- Security Group Configuration
-- Running Instance
-- EC2 Connection
-- Linux Terminal
+![AWS Console](screenshots/01-aws-console-home.png)
+
+Logged in to the AWS Management Console to access AWS services.
 
 ---
 
-# 🎓 Learning Outcomes
+### 2. Amazon EC2 Dashboard
 
-After completing this project, I learned:
+![EC2 Dashboard](screenshots/02-ec2-dashboard.png)
 
-- Introduction to Amazon EC2
-- How virtual machines work in AWS
-- Importance of Amazon Machine Images (AMI)
-- Instance type selection
-- Security Groups and firewall rules
-- Key Pair authentication
-- EC2 networking basics
-- Connecting to Linux servers
-- EC2 instance lifecycle
-- Cloud infrastructure fundamentals
+Opened the Amazon EC2 Dashboard and prepared to launch a new virtual server.
 
 ---
 
-# 🌟 Key Features
+### 3. Launch EC2 Instance
 
-- AWS Free Tier Compatible
-- Beginner Friendly
-- Secure Remote Access
-- Virtual Server Deployment
-- Basic Cloud Infrastructure Setup
+![Launch Instance](screenshots/03-launch-instance.png)
+
+Configured the EC2 instance by selecting the AMI, instance type, networking, and key pair before launching.
 
 ---
 
-# 🔒 Security Considerations
+### 4. EC2 Instance Running
 
-- Keep the `.pem` key secure.
-- Do not expose private keys publicly.
-- Restrict inbound rules to required ports only.
+![Running Instance](screenshots/04-instance-running.png)
+
+Successfully launched the EC2 instance. The instance entered the **Running** state and passed all status checks.
+
+---
+
+### 5. EC2 Instance Terminated
+
+![Terminated Instance](screenshots/05-instance-terminated.png)
+
+Terminated the EC2 instance after completing the project to prevent unnecessary AWS charges.
+
+---
+
+## 🎓 Learning Outcomes
+
+Through this project, I learned:
+
+- AWS Management Console navigation
+- Amazon EC2 fundamentals
+- Launching and configuring EC2 instances
+- Selecting an Amazon Machine Image (AMI)
+- Choosing an instance type
+- Basic networking and security configuration
+- Monitoring EC2 instance states
+- EC2 instance lifecycle management
+- Safe termination of cloud resources
+
+---
+
+## 🌟 Key Features
+
+- Beginner-friendly AWS project
+- Free Tier compatible
+- Hands-on EC2 deployment
+- Cloud infrastructure basics
+- EC2 lifecycle management
+
+---
+
+## 🔒 Best Practices
+
+- Use AWS Free Tier resources whenever possible.
+- Protect your Key Pair securely.
+- Configure Security Groups with only the required ports.
 - Terminate unused instances to avoid unexpected charges.
 
 ---
 
-# 📚 References
+## 📚 References
 
-- AWS Documentation
-- Amazon EC2 User Guide
-- AWS Free Tier Documentation
+- https://docs.aws.amazon.com/ec2/
+- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/
+- https://aws.amazon.com/ec2/
 
 ---
 
-# 👩‍💻 Author
+## 👩‍💻 Author
 
 **Kartiki Mane**
 
 Computer Science Engineering Student
 
-Passionate about Cloud Computing, AWS, Python, and Software Development.
+Currently learning **AWS Cloud Computing** and building hands-on cloud projects to strengthen practical cloud computing skills.
 
 ---
 
+⭐ If you found this project helpful, consider giving it a **Star** on GitHub.
